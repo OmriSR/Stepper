@@ -4,10 +4,15 @@ import java.util.*;
 public class Flow {
     public abstract class Step {
 
-        private ArrayList<SystemData> inputs;
-        private ArrayList<SystemData> outputs;
+        protected ArrayList<SystemData> inputs;
+        protected ArrayList<SystemData> outputs;
 
         private boolean readonly = false;
+
+        public Step(boolean readonly)
+        {
+            this.readonly = readonly;
+        }
 
         public boolean isReadonly()
         {
@@ -19,7 +24,7 @@ public class Flow {
             this.readonly = readonly;
         }
 
-        public void pre
+        public abstract void presentToUser();
     }
 
 }
