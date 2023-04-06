@@ -1,8 +1,9 @@
 package engine;
-import java.util.*;
+
+import java.util.ArrayList;
 
 public class Flow {
-    public abstract class Step {
+    public static abstract class Step {
 
         protected ArrayList<SystemData> inputs;
         protected ArrayList<SystemData> outputs;

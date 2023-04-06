@@ -1,9 +1,10 @@
-package engine.common;
+package engine;
+
 abstract public class SystemData<T> {
-    final private String name;
-    private String alias;
-    final private Boolean userFriendly;
-    private  T content;
+    final protected String name;
+    protected String alias;
+    final protected Boolean userFriendly;
+    protected  T content;
 
     protected SystemData(String name, Boolean userFriendly) {
         this.name = name;
@@ -15,7 +16,7 @@ abstract public class SystemData<T> {
         this.content = content;
     }
 
-    public Object getContent() {
+    public T getContent() {
         return content;
     }
 
@@ -31,7 +32,7 @@ abstract public class SystemData<T> {
         return userFriendly;
     }
 
-//  a simple form of representation that can be understandable by a user with no technical background
+    //  a simple form of representation that can be understandable by a user with no technical background
     public abstract void presentToUser();
 
 }
