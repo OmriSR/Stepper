@@ -1,5 +1,4 @@
-package engine.steps;
-
+package engine.step;
 import engine.SystemData;
 
 public class FilesContentExtractor extends Step {
