@@ -34,5 +34,4 @@ abstract public class SystemData<T> {
 //  a simple form of representation that can be understandable by a user with no technical background
     public abstract void presentToUser();
 
-
 }
