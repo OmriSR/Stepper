@@ -1,6 +1,7 @@
 abstract public class SystemData {
     private String name;
     private Boolean user_friendly;
+    private Object content;
 
     public String getName() {
         return name;
