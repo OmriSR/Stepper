@@ -1,13 +1,24 @@
-abstract public class SystemData {
-    private String name;
-    private Boolean user_friendly;
-    private Object content;
+abstract public class SystemData<T> {
+    final private String name;
+    private String alias;
+    final private Boolean userFriendly;
+    private  T content;
+
+    protected SystemData(String name, Boolean userFriendly) {
+        this.name = name;
+        this.userFriendly = userFriendly;
+    }
+    protected SystemData(String name, Boolean userFriendly, T content) {
+        this.name = name;
+        this.userFriendly = userFriendly;
+        this.content = content;
+    }
 
     public Object getContent() {
         return content;
     }
 
-    public void setContent(Object content) {
+    public void setContent(T content) {
         this.content = content;
     }
 
@@ -15,8 +26,8 @@ abstract public class SystemData {
         return name;
     }
 
-    public Boolean getUserFriendly() {
-        return user_friendly;
+    public Boolean isUserFriendly() {
+        return userFriendly;
     }
 
 //  a simple form of representation that can be understandable by a user with no technical background
