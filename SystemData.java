@@ -3,6 +3,14 @@ abstract public class SystemData {
     private Boolean user_friendly;
     private Object content;
 
+    public Object getContent() {
+        return content;
+    }
+
+    public void setContent(Object content) {
+        this.content = content;
+    }
+
     public String getName() {
         return name;
     }
