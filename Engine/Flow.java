@@ -1,14 +1,13 @@
-public class Flow
-{
-    public abstract class Step
-    {
-        public class StepIO
-        {
-//            private Collection systemData;
+package engine;
 
-            private String name;
 
-        }
+public class Flow {
+    public abstract class Step {
+
+        //SystemData inputs;
+
+        //SystemData outputs;
+
         private boolean readonly = false;
 
         public boolean isReadonly()
