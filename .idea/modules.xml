@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Stepper.iml" filepath="$PROJECT_DIR$/.idea/Stepper.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Engine/engine.iml" filepath="$PROJECT_DIR$/Engine/engine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/engine/engine.iml" filepath="$PROJECT_DIR$/engine/engine.iml" />
     </modules>
   </component>
 </project>

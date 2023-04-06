@@ -1,12 +1,11 @@
 package engine;
-
+import java.util.*;
 
 public class Flow {
     public abstract class Step {
 
-        //SystemData inputs;
-
-        //SystemData outputs;
+        private ArrayList<SystemData> inputs;
+        private ArrayList<SystemData> outputs;
 
         private boolean readonly = false;
 
@@ -19,6 +18,8 @@ public class Flow {
         {
             this.readonly = readonly;
         }
+
+        public void pre
     }
 
 }

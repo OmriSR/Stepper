@@ -1,3 +1,4 @@
+package engine.common;
 abstract public class SystemData<T> {
     final private String name;
     private String alias;
