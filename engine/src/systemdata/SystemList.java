@@ -37,4 +37,20 @@ public class SystemList extends SystemData<List<SystemData<Object>>> {
             out.println("System List is empty");
         }
     }
+
+//    @Override
+//    public boolean equals(Object obj) {
+//        List<SystemData<Object>> other_content = obj.getContent();
+//
+//        boolean res = this.content.size() == other_content.size()
+//
+//        for(int i=0; i<this.content.size() && res; ++i){
+//
+//        }
+//    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
 }

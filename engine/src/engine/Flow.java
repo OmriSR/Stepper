@@ -4,10 +4,8 @@ import java.util.ArrayList;
 
 public class Flow {
     public static abstract class Step {
-
         protected ArrayList<SystemData> inputs;
         protected ArrayList<SystemData> outputs;
-
         private boolean readonly = false;
 
         public Step(boolean readonly)
