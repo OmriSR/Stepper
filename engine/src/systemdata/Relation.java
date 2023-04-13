@@ -40,6 +40,7 @@ public class Relation extends SystemData<Map<String,List<Object>>> {
         super.setContent(content);
     }
 
+
     @Override
     public void presentToUser() {
         out.println("There are " + this.numOfRows + " rows in the " + this.name);

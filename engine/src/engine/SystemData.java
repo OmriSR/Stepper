@@ -1,7 +1,7 @@
 package engine;
 
 abstract public class SystemData<T> {
-    final protected String name;
+    protected String name;
     protected String alias;
     final protected Boolean userFriendly;
     protected  T content;
@@ -14,6 +14,11 @@ abstract public class SystemData<T> {
         this.name = name;
         this.userFriendly = userFriendly;
         this.content = content;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
     }
 
     public T getContent() {
